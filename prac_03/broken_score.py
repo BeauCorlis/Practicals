@@ -6,9 +6,9 @@ Broken program to determine score status
 """
 
 # TODO: Fix this!
-
-score = float(input("Enter score: "))
-
+def main():
+    score = float(input("Enter score: "))
+    Score_scheme(score)
 
 def Score_scheme(score):
     if score < 0 or score > 100:
@@ -21,4 +21,4 @@ def Score_scheme(score):
         print("Bad")
 
 
-Score_scheme(score)
+main()
